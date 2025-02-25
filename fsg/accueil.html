@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Anthony Peixoto, développeur web spécialisé en PHP, Symfony, Vue.js et React. Découvrez mes projets et compétences.">
+    <meta name="keywords" content="développeur web, portfolio, Anthony Peixoto, PHP, Symfony, Vue.js, React">
+    <meta name="author" content="Anthony Peixoto">
+    <title>Anthony Peixoto | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <div id="title">
+            <h1>Anthony Peixoto</h1>
+            <p>Développeur Web</p>
+        </div>
+        <ul>
+            <li><a class="btn" href="#">Accueil</a></li>
+            <li><a class="btn" href="apropos.html">À propos</a></li>
+            <li><a class="btn" href="projet.html">Projets</a></li>
+            <li><a class="btn" href="veille.html">Veille Technologique</a></li>
+            <li><a class="btn" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <header>
+        <div class="hero">
+            <h2>Bienvenue sur mon Portfolio</h2>
+            <p>Découvrez mes projets, compétences et expériences.</p>
+            <button class="cta" type="button"><a href="apropos.html">Voir mon CV</a></button>
+        </div>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Bonjour, je m'appelle Anthony Peixoto, j'ai 25 ans et je suis actuellement en BTS Services Informatiques aux Organisations (SIO) option Solutions Logicielles et Applications Métiers (SLAM). Passionné par le développement web et mobile, je suis une personne calme, sérieuse, avec une pointe d'humour et de bonne humeur. N’hésitez pas à parcourir mon portfolio pour en apprendre davantage sur mon travail.</p>
+    </section>
+
+    <!-- Section Projets -->
+    <h2>Projets et expériences récents</h2>
+
+    <section id="projects">
+
+        <div class="project">
+            <h3>Stage chez Délia Technologie</h3>
+            <img src="images/project/deliaTechnologie.webp" alt="Projet Délia Technologie">
+            <p class="tech">TypeScript - Vue.js - Nuxt - React - Drizzle - Tailwind</p>
+            <p>Développement et maintenance d'un outil interne de gestion RH et de facturation client. Ajout de fonctionnalités, correction de bugs et intégration d’API.</p>
+            <button class="btn" type="button">En savoir plus</button>
+        </div>
+
+        <div class="project">
+            <h3>R3sto</h3>
+            <img src="images/project/r3sto.jpg" alt="Projet R3sto">
+            <p class="tech">PHP - MySQL</p>
+            <p>Mise à jour d'un site de notation de restaurants. Développement de nouvelles fonctionnalités, correction de bugs et gestion de tickets en méthode agile.</p>
+            <button class="btn" type="button">En savoir plus</button>
+        </div>
+
+        <div class="project">
+            <h3>Stage chez R'ékilibre</h3>
+            <img src="images/project/rekilibre.jpeg" alt="Projet R'ékilibre">
+            <p class="tech">PHP - Symfony - Bootstrap</p>
+            <p>Amélioration d'un site de gestion des adhérents d’une association : corrections de bugs, migration de version et ajout de nouvelles fonctionnalités.</p>
+            <button class="btn" type="button">En savoir plus</button>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="sendEmail.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button type="submit">Envoyer</button>
+          </form>
+          
+    </section>
+
+   
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 Anthony Peixoto | Développé avec passion ❤️</p>
+    </footer>
+<!-- Mouse Trail Container -->
+<div id="ripple-container"></div>
+<script src="mouse.js"></script>
+</body>
+</html>
