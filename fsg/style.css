@@ -22,8 +22,24 @@ body {
     text-align: justify;
 }    
 
+.etapeProjet a{
+    margin: 3px;
+}
 
+.etapeProjet p{
+    width: 500px;
+}
 
+.explicationProjet{
+    width: 600px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 10px;
+}
 
 /* ----- Barre de Navigation ----- */
 nav {
@@ -217,11 +233,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 .article {
     display: flex;
-    justify-content: flex-start; /* Alignement à gauche */
+    justify-content: flex-start;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -230,7 +247,14 @@ footer {
     max-width: 1300px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     text-align: left;
-    height: 160px;
+    max-height: 300px; /* Limite la hauteur de l'article */
+    overflow: hidden; /* Empêche le débordement global */
+    box-sizing: border-box; /* Inclut le padding dans la hauteur totale */
+}
+
+
+.detailParagraphe{
+    font-size: 12px;
 }
 
 .article img {
@@ -242,10 +266,17 @@ footer {
 
 .articlesDetails {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+    overflow-y: auto; /* Permet le défilement dans les détails de l'article */
+    max-height: 200px; /* Limite la hauteur des détails */
+    padding-right: 10px;
+    
 }
+
+.articlesDetails::-webkit-scrollbar {
+    display: none; 
+}   
 
 .cta a{
     text-decoration: none;
