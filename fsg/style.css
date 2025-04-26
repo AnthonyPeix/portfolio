@@ -1,0 +1,377 @@
+/* ----- Styles Généraux ----- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b191a;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url('images/bg.jpg'); /* Remplace 'ton_image.jpg' par le chemin de ton image */
+    background-size: cover; /* L'image couvrira toute la page */
+    background-position: center; /* L'image sera centrée */
+    background-attachment: fixed; /* L'image ne se déplacera pas quand tu scrolles */}
+
+
+.preuve{
+    width: 400px;
+    margin-bottom: 40px;
+    border: 2px solid #ccc; /* Bordure grise claire de 2px */
+    border-radius: 4px;
+   
+}
+
+.passions p{
+    width: 1000px;
+    margin: 30px;
+    text-align: justify;
+}    
+
+.explicationProjet li{
+    list-style-type: none;
+
+}
+h3{
+    text-align: center;
+}
+
+.etapeProjet a{
+    margin: 3px;
+}
+
+.etapeProjet p{
+    width: 500px;
+}
+
+.etapeProjet li{
+    list-style-type: none;
+    text-align: left;
+}
+
+
+
+.explicationProjet{
+    width: 1000px;
+    
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 10px;
+}
+
+/* ----- Barre de Navigation ----- */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.274);
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.titreCompetence{
+    font-style: italic;
+    color: #aab4e7;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#title {
+    text-align: center;
+    margin-left: 15px;
+}
+
+/* ----- Boutons Génériques ----- */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+/* ----- Section Hero ----- */
+.hero {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+/* ----- Boutons Call to Action ----- */
+.cta {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #B9CFD0;
+    color: #1b191a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(185, 207, 208, 0.8);
+}
+
+/* ----- Sections Générales ----- */
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ----- Section Projets ----- */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Colonnes dynamiques */
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    width: 400px;
+    height: 700px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+    margin: 30px 0;
+}
+
+.passions img {
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+    margin: 30px 0;
+}
+
+.project button {
+    margin: 20px 0 50px;
+}
+
+.project h3 {
+    margin-top: 20px;
+}
+
+.tech {
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* ----- Section Contact ----- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    margin: auto;
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+
+form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* ----- Pied de page ----- */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.274);
+    backdrop-filter: blur(10px);
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* ----- Articles ----- */
+#mesArticles {
+    margin: 50px 0 20px;
+    font-size: 2rem;
+}
+
+#articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-height: 300px; /* Limite la hauteur de l'article */
+    overflow: hidden; /* Empêche le débordement global */
+    box-sizing: border-box; /* Inclut le padding dans la hauteur totale */
+}
+
+
+.detailParagraphe{
+    font-size: 12px;
+}
+
+.article img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.articlesDetails {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    overflow-y: auto; /* Permet le défilement dans les détails de l'article */
+    max-height: 200px; /* Limite la hauteur des détails */
+    padding-right: 10px;
+    
+}
+
+.articlesDetails::-webkit-scrollbar {
+    display: none; 
+}   
+
+.cta a{
+    text-decoration: none;
+    color:black
+}
+
+.btnArticle {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    background: #6b8bc5;
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.btnArticle:hover {
+    background: #99b3e2;
+}
+
+.date {
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+
+#snake-game-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+canvas {
+    background-color: black;
+    
+}
+
+#ripple-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Évite d'empêcher les autres interactions */
+  }
+  
+  .ripple {
+    position: absolute;
+    width: 10px; /* Plus petite */
+    height: 10px; /* Plus petite */
+    background: rgba(0, 0, 0, 0.6); /* Noir */
+    border-radius: 50%;
+    transform: scale(0);
+    animation: rippleEffect 0.4s linear;
+  }
+  
+  @keyframes rippleEffect {
+    to {
+      transform: scale(4); /* Petite expansion */
+      opacity: 0;
+    }
+  }
+  
+ 
