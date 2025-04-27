@@ -178,7 +178,7 @@ section p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
     width: 400px;
-    height: 700px;
+    height: 500px;
     margin: 20px;
     display: flex;
     flex-direction: column;
