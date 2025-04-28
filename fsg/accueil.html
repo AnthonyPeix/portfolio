@@ -14,14 +14,14 @@
     <!-- Barre de navigation -->
     <nav>
         <div id="title">
-            <h1>Anthony Peixoto </h1>
+            <h1>Anthony Peixoto</h1>
             <p>Développeur Web</p>
         </div>
         <ul>
             <li><a class="btn" href="#">Accueil</a></li>
             <li><a class="btn" href="apropos.html">À propos</a></li>
             <li><a class="btn" href="projet.html">Projets</a></li>
-            <li><a class="btn" href="veille.html">Veille Technologique</a></li>
+            <li><a class="btn" href="veille.html">Veille technologique</a></li>
             <li><a class="btn" href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -29,8 +29,8 @@
     <!-- Section d'accueil -->
     <header>
         <div class="hero">
-            <h2>Bienvenue sur mon Portfolio</h2>
-            <p>Découvrez mes projets, compétences et expériences.</p>
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Découvrez mes projets, mes compétences et mes expériences.</p>
             <button class="cta" type="button"><a href="apropos.html">Voir mon CV</a></button>
         </div>
     </header>
@@ -38,7 +38,7 @@
     <!-- Section À propos -->
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Bonjour, je m'appelle Anthony Peixoto, j'ai 25 ans et je suis actuellement en BTS Services Informatiques aux Organisations (SIO) option Solutions Logicielles et Applications Métiers (SLAM). Passionné par le développement web et mobile, je suis une personne calme, sérieuse, avec une pointe d'humour et de bonne humeur. N’hésitez pas à parcourir mon portfolio pour en apprendre davantage sur mon travail.</p>
+        <p>Bonjour, je m'appelle Anthony Peixoto, j'ai 25 ans et je suis actuellement étudiant en BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM). Passionné par le développement web et mobile, je suis une personne calme, sérieuse, avec une pointe d'humour et de bonne humeur. N’hésitez pas à parcourir mon portfolio pour en découvrir davantage sur mon travail.</p>
     </section>
 
     <!-- Section Projets -->
@@ -47,20 +47,21 @@
     <section id="projects">
 
         <div class="project">
-            <h3>Projet Modération</h3>
-            <img src="images/project/java.png">
+            <h3>Projet de modération</h3>
+            <img src="images/project/java.png" alt="Projet Java MySQL">
             <p class="tech">Java - MySQL</p>
-<p>Développement d'une application de modération pour le site de notation de restaurants, principalement axée sur la gestion des commentaires.</p>            <a class="btn" href="projetDetails/projetModo.html">En savoir plus</a>
+            <p>Développement d'une application de modération pour un site de notation de restaurants, principalement axée sur la gestion des commentaires.</p>
+            <a class="btn" href="projetDetails/projetModo.html">En savoir plus</a>
         </div>
+
         <div class="project">
             <h3>Stage chez Délia Technologie</h3>
-            <img src="images/project/deliaTechnologie.webp">
-            <p class="tech">Typescript - VueJS - Nuxt - React - Drizzle - Tailwind</p>
-<p>Correction de bugs, ajout de nouvelles fonctionnalités, création d'un projet et mise en place de son architecture et de son organisation.</p>            <a class="btn" href="projetDetails/stageDelia.html">En savoir plus</a>
+            <img src="images/project/deliaTechnologie.webp" alt="Stage Delia Technologie">
+            <p class="tech">TypeScript - Vue.js - Nuxt - React - Drizzle - Tailwind</p>
+            <p>Correction de bugs, ajout de nouvelles fonctionnalités, création d'un projet et mise en place de son architecture et de son organisation.</p>
+            <a class="btn" href="projetDetails/stageDelia.html">En savoir plus</a>
         </div>
-      
 
-        
     </section>
 
     <!-- Section Contact -->
@@ -76,19 +77,17 @@
             <label for="message">Message :</label>
             <textarea id="message" name="message" required></textarea>
           
-            <a class="btn" href="">Envoyer</a>
+            <button class="btn" type="submit">Envoyer</button>
         </form>
-          
     </section>
-
-   
 
     <!-- Pied de page -->
     <footer>
         <p>© 2025 Anthony Peixoto | Développé avec passion ❤️</p>
     </footer>
-<!-- Mouse Trail Container -->
-<div id="ripple-container"></div>
-<script src="mouse.js"></script>
+
+    <!-- Mouse Trail Container -->
+    <div id="ripple-container"></div>
+    <script src="mouse.js"></script>
 </body>
 </html>
